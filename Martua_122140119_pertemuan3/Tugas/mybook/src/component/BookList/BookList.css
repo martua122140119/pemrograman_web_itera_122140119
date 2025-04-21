@@ -1,0 +1,119 @@
+.book-list-container {
+    margin-top: 20px;
+}
+
+.edit-form-container {
+    margin-bottom: 30px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.book-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-info {
+    margin-bottom: 15px;
+}
+
+.book-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 18px;
+}
+
+.book-author {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.book-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-owned {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-reading {
+    background-color: #007bff;
+    color: white;
+}
+
+.status-tobuy {
+    background-color: #dc3545;
+    color: white;
+}
+
+.book-notes {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    border-left: 3px solid #ddd;
+    padding-left: 10px;
+}
+
+.book-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-edit {
+    background-color: #0066cc;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.no-books {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+}
